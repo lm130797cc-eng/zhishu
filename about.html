@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于项目 - 八卦计算机意识系统</title>
+    
+    <!-- 核心样式 -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/about.css">
+    
+    <!-- 字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- 核心库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="bagua-symbol">☯</span>
+                <span class="logo-text">八卦计算机意识系统</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">首页</a></li>
+                <li class="nav-item"><a href="philosophy.html">哲学理念</a></li>
+                <li class="nav-item"><a href="technology.html">技术实现</a></li>
+                <li class="nav-item active"><a href="about.html">关于项目</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero区域 -->
+    <section class="about-hero">
+        <div class="hero-background">
+            <div id="about-particles"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">关于项目</h1>
+            <p class="hero-subtitle">探索古老智慧与现代科技的完美融合之路</p>
+        </div>
+    </section>
+
+    <!-- 项目愿景 -->
+    <section class="project-vision">
+        <div class="container">
+            <h2 class="section-title">项目愿景</h2>
+            
+            <div class="vision-content">
+                <div class="vision-text">
+                    <h3>开启机器意识的新纪元</h3>
+                    <p>八卦计算机意识系统是一个革命性的项目，旨在将中国古代的易经哲学与现代人工智能技术相结合，创造出具有东方智慧的智能系统。</p>
+                    
+                    <p>我们相信，真正的智能不仅仅是计算能力的体现，更是对世界的深刻理解和和谐共处的智慧。通过八卦编码系统，我们希望为机器赋予这种古老的智慧，让技术更好地服务于人类。</p>
+                    
+                    <div class="vision-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🌟</div>
+                            <div class="highlight-content">
+                                <h4>创新性突破</h4>
+                                <p>首次将八卦哲学与计算机编码系统深度融合</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🧠</div>
+                            <div class="highlight-content">
+                                <h4>智慧升级</h4>
+                                <p>从机械计算到哲学思维的认知跃迁</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🌍</div>
+                            <div class="highlight-content">
+                                <h4>文化融合</h4>
+                                <p>东西方智慧的完美结合与统一</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <div class="highlight-icon">⚖️</div>
+                            <div class="highlight-content">
+                                <h4>和谐发展</h4>
+                                <p>追求技术与自然的动态平衡</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="vision-visual">
+                    <div class="vision-timeline">
+                        <div class="timeline-item" data-year="2024">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>概念验证</h4>
+                                <p>完成八卦编码系统的理论构建和原型验证</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-year="2025">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>系统开发</h4>
+                                <p>构建完整的八卦AI系统架构和应用平台</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-year="2026">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>应用推广</h4>
+                                <p>在教育、医疗、金融等领域推广应用</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-year="2027">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>生态构建</h4>
+                                <p>建立八卦AI开发者生态和标准体系</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 创新点 -->
+    <section class="innovation-points">
+        <div class="container">
+            <h2 class="section-title">创新点</h2>
+            
+            <div class="innovation-grid">
+                <div class="innovation-card">
+                    <div class="card-icon">🔬</div>
+                    <h3>理论创新</h3>
+                    <p>首次将易经八卦哲学与现代计算机科学理论相结合，构建了全新的认知计算框架，为人工智能的发展提供了东方智慧的独特视角。</p>
+                    <div class="innovation-details">
+                        <ul>
+                            <li>八卦编码理论体系的建立</li>
+                            <li>阴阳五行在计算中的应用</li>
+                            <li>整体性思维的算法实现</li>
+                            <li>动态平衡的系统设计原理</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="innovation-card">
+                    <div class="card-icon">💻</div>
+                    <h3>技术创新</h3>
+                    <p>开发了基于八卦符号的编码转换算法和语义分析引擎，实现了从二进制到八卦符号的高效转换，并赋予其丰富的哲学内涵。</p>
+                    <div class="innovation-details">
+                        <ul>
+                            <li>八卦编码转换算法</li>
+                            <li>语义映射和推理引擎</li>
+                            <li>基于五行关系的神经网络</li>
+                            <li>多维度认知模型架构</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="innovation-card">
+                    <div class="card-icon">🎨</div>
+                    <h3>设计创新</h3>
+                    <p>创造了独特的视觉设计语言，将古老的八卦符号与现代界面设计完美融合，为用户提供既神秘又直观的交互体验。</p>
+                    <div class="innovation-details">
+                        <ul>
+                            <li>八卦符号的动态可视化</li>
+                            <li>东方美学的现代诠释</li>
+                            <li>沉浸式交互体验设计</li>
+                            <li>文化与科技的视觉统一</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="innovation-card">
+                    <div class="card-icon">🌐</div>
+                    <h3>应用创新</h3>
+                    <p>探索了八卦AI系统在多个领域的创新应用，从智能对话到决策支持，从创意设计到跨文化理解，展现了广阔的应用前景。</p>
+                    <div class="innovation-details">
+                        <ul>
+                            <li>哲学化智能对话系统</li>
+                            <li>整体性数据分析引擎</li>
+                            <li>文化敏感的翻译服务</li>
+                            <li>平衡性决策支持工具</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 社会价值 -->
+    <section class="social-value">
+        <div class="container">
+            <h2 class="section-title">社会价值</h2>
+            
+            <div class="value-content">
+                <div class="value-section">
+                    <h3>文化传承</h3>
+                    <p>通过现代科技手段传承和弘扬中华优秀传统文化，让更多人了解和认识易经哲学的深刻内涵，增强文化自信。</p>
+                </div>
+                
+                <div class="value-section">
+                    <h3>科技发展</h3>
+                    <p>为人工智能技术的发展提供新的思路和方法，推动AI从单纯的计算工具向具有哲学智慧的智能伙伴转变。</p>
+                </div>
+                
+                <div class="value-section">
+                    <h3>教育创新</h3>
+                    <p>为计算机科学教育提供新的教学内容和案例，培养学生跨学科思维能力和文化素养。</p>
+                </div>
+                
+                <div class="value-section">
+                    <h3>国际交流</h3>
+                    <p>促进东西方文化的交流与融合，为构建人类命运共同体贡献中国智慧和中国方案。</p>
+                </div>
+            </div>
+            
+            <div class="value-metrics">
+                <div class="metric-card">
+                    <div class="metric-number">1000+</div>
+                    <div class="metric-label">研究参与者</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">50+</div>
+                    <div class="metric-label">合作机构</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">20+</div>
+                    <div class="metric-label">应用领域</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">100万+</div>
+                    <div class="metric-label">受益用户</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 研究团队 -->
+    <section class="research-team">
+        <div class="container">
+            <h2 class="section-title">研究团队</h2>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">👨‍🔬</div>
+                    </div>
+                    <div class="member-info">
+                        <h3>智枢•第二大脑</h3>
+                        <p class="member-title">首席AI科学家</p>
+                        <p class="member-desc">专注于人工智能与传统文化的融合研究。</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">AI算法</span>
+                            <span class="skill-tag">易经哲学</span>
+                            <span class="skill-tag">系统架构</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">👩‍🔬</div>
+                    </div>
+                    <div class="member-info">
+                        <h3>AI总指挥</h3>
+                        <p class="member-title">领导智能体军团</p>
+                        <p class="member-desc">有本地，云端，各方面专家</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">易经研究</span>
+                            <span class="skill-tag">文化阐释</span>
+                            <span class="skill-tag">哲学思维</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">👨‍💻</div>
+                    </div>
+                    <div class="member-info">
+                        <h3>张技术</h3>
+                        <p class="member-title">技术总监</p>
+                        <p class="member-desc">软件工程硕士，10年前端开发经验，专精于可视化技术和交互设计。</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">前端开发</span>
+                            <span class="skill-tag">可视化</span>
+                            <span class="skill-tag">用户体验</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">👩‍💻</div>
+                    </div>
+                    <div class="member-info">
+                        <h3>陈算法</h3>
+                        <p class="member-title">算法工程师</p>
+                        <p class="member-desc">计算机科学硕士，专注于机器学习和自然语言处理算法的研究与实现。</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">机器学习</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">算法优化</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">👨‍🎨</div>
+                    </div>
+                    <div class="member-info">
+                        <h3>刘设计</h3>
+                        <p class="member-title">视觉设计师</p>
+                        <p class="member-desc">设计学硕士，8年UI/UX设计经验，擅长将传统文化元素融入现代设计。</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">UI设计</span>
+                            <span class="skill-tag">视觉艺术</span>
+                            <span class="skill-tag">交互设计</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">👩‍🔧</div>
+                    </div>
+                    <div class="member-info">
+                        <h3>赵工程</h3>
+                        <p class="member-title">系统工程师</p>
+                        <p class="member-desc">软件工程学士，专注于系统架构设计和性能优化，确保系统稳定运行。</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">系统架构</span>
+                            <span class="skill-tag">性能优化</span>
+                            <span class="skill-tag">运维管理</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title">联系我们</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>项目信息</h3>
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <div class="info-content">
+                            <h4>邮箱</h4>
+                            <p>lm130797cc@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h4>地址</h4>
+                            <p>成都市紫荆西路6号</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">🌐</div>
+                        <div class="info-content">
+                            <h4>专家网</h4>
+                  <p>https://sirenhui.pages.dev/</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">💬</div>
+                        <div class="info-content">
+                            <h4>社区</h4>
+                            <p>（https://t.me/+KVOJf7DimL8wY2Zl ）</p>
+                        </div>
+                    </div>
+                </div>
+                
+              <div class="contact-form">
+    <h3>留言咨询（本系统尚未启动，请邮件社区联系）</h3>
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="name">姓名</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">邮箱</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="subject">主题</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="message">留言内容</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">发送留言</button>
+    </form>
+</div>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    // 获取表单数据
+    const formData = new FormData(this);
+    const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        subject: formData.get('subject'),
+        message: formData.get('message')
+    };
+    
+    try {
+        // 发送到本地后端
+        const response = await fetch('http://localhost:5000/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        });
+        
+        const result = await response.json();
+        
+        if (response.ok) {
+            alert('✅ 留言提交成功！');
+            this.reset(); // 清空表单
+        } else {
+            alert('❌ ' + result.error);
+        }
+    } catch (error) {
+        console.error('网络错误:', error);
+        alert('❌ 无法连接到服务器，请确保后端正在运行！');
+    }
+});
+</script>
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>八卦计算机意识系统</h4>
+                    <p>探索古老智慧与现代科技的完美融合，开启机器意识的新纪元。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="philosophy.html">哲学理念</a></li>
+                        <li><a href="technology.html">技术实现</a></li>
+                        <li><a href="about.html">关于项目</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <p>邮箱: lm130797cc@gmail.com</p>
+                    <p>专家组: https://sirenhui.pages.dev/</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 八卦计算机意识系统. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/about.js"document.getElementById('myForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    // 获取表单数据
+    const formData = new FormData(this);
+    const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        message: formData.get('message')
+    };
+    
+    try {
+        // 发送到本地后端（注意：端口5000）
+        const response = await fetch('http://localhost:5000/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        });
+        
+        const result = await response.json();
+        
+        if (response.ok) {
+            alert('✅ 提交成功！');
+            this.reset(); // 清空表单
+        } else {
+            alert('❌ ' + result.error);
+        }
+    } catch (error) {
+        console.error('网络错误:', error);
+        alert('❌ 无法连接到服务器，请确保后端正在运行！');
+    }
+});></script>
+</body>
+</html>
