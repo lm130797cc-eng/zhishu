@@ -1,0 +1,522 @@
+/* 技术页面专用样式 */
+
+/* Hero区域 */
+.tech-hero {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: var(--gradient-primary);
+    overflow: hidden;
+}
+
+.tech-hero .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.tech-hero .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.tech-hero .hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+}
+
+.tech-hero .hero-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 编码系统 */
+.encoding-system {
+    padding: 100px 0;
+    background: var(--secondary-bg);
+}
+
+.encoding-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.encoding-theory h3,
+.encoding-visualization h3 {
+    color: var(--accent-gold);
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.encoding-table {
+    background: rgba(26, 31, 46, 0.8);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    background: var(--accent-gold);
+    color: var(--primary-bg);
+    font-weight: 600;
+}
+
+.header-cell {
+    padding: 15px 10px;
+    text-align: center;
+    border-right: 1px solid rgba(10, 14, 26, 0.2);
+}
+
+.header-cell:last-child {
+    border-right: none;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    border-bottom: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.table-row:hover {
+    background: rgba(212, 175, 55, 0.1);
+}
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+.cell {
+    padding: 12px 10px;
+    text-align: center;
+    color: var(--text-secondary);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell:last-child {
+    border-right: none;
+}
+
+.cell.symbol {
+    font-size: 1.5rem;
+    color: var(--accent-gold);
+}
+
+.cell.code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    color: var(--accent-cyan);
+}
+
+.chart-container {
+    height: 400px;
+    background: rgba(26, 31, 46, 0.3);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+/* 算法实现 */
+.algorithm-implementation {
+    padding: 100px 0;
+    background: var(--primary-bg);
+}
+
+.algorithm-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.algorithm-card {
+    background: rgba(26, 31, 46, 0.8);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.algorithm-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-gold);
+    box-shadow: 0 15px 35px rgba(212, 175, 55, 0.2);
+}
+
+.algorithm-card h3 {
+    color: var(--accent-gold);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.code-block {
+    background: rgba(10, 14, 26, 0.9);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 8px;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.code-block pre {
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.code-block code {
+    color: var(--text-secondary);
+}
+
+/* 性能分析 */
+.performance-analysis {
+    padding: 100px 0;
+    background: var(--secondary-bg);
+}
+
+.performance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.performance-card {
+    background: rgba(26, 31, 46, 0.8);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+}
+
+.performance-card h3 {
+    color: var(--accent-gold);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.chart-container {
+    height: 300px;
+    background: rgba(10, 14, 26, 0.3);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+/* 系统架构 */
+.system-architecture {
+    padding: 100px 0;
+    background: var(--primary-bg);
+}
+
+.architecture-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.architecture-diagram h3,
+.architecture-details h3 {
+    color: var(--accent-gold);
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.architecture-layers {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.layer {
+    background: rgba(26, 31, 46, 0.8);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.layer:hover {
+    border-color: var(--accent-gold);
+    transform: translateX(10px);
+}
+
+.layer h4 {
+    color: var(--accent-gold);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.layer-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.layer-item {
+    background: rgba(212, 175, 55, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 15px;
+    padding: 5px 12px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.application-layer {
+    border-left: 4px solid #00ff00;
+}
+
+.cognition-layer {
+    border-left: 4px solid #00ffff;
+}
+
+.encoding-layer {
+    border-left: 4px solid #d4af37;
+}
+
+.foundation-layer {
+    border-left: 4px solid #ff4500;
+}
+
+.tech-stack {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.tech-category {
+    background: rgba(26, 31, 46, 0.6);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.tech-category h4 {
+    color: var(--accent-cyan);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.tech-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tech-category li {
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.tech-category li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    color: var(--accent-gold);
+    font-size: 0.8rem;
+}
+
+/* 应用案例 */
+.application-cases {
+    padding: 100px 0;
+    background: var(--secondary-bg);
+}
+
+.cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.case-card {
+    background: rgba(26, 31, 46, 0.8);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.case-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.case-card:hover::before {
+    left: 100%;
+}
+
+.case-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-gold);
+    box-shadow: 0 15px 35px rgba(212, 175, 55, 0.2);
+}
+
+.case-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.case-card h3 {
+    color: var(--accent-gold);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.case-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.case-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-tag {
+    background: rgba(212, 175, 55, 0.2);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 15px;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    color: var(--accent-gold);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .tech-hero .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .encoding-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .algorithm-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .performance-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .architecture-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .tech-stack {
+        grid-template-columns: 1fr;
+    }
+    
+    .cases-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .table-header,
+    .table-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .table-header {
+        display: none;
+    }
+    
+    .table-row {
+        margin-bottom: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .cell {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+    
+    .cell:last-child {
+        border-bottom: none;
+    }
+    
+    .cell::before {
+        content: attr(data-label) ': ';
+        font-weight: 600;
+        color: var(--accent-gold);
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-hero .hero-title {
+        font-size: 2rem;
+    }
+    
+    .tech-hero .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .algorithm-card,
+    .performance-card,
+    .case-card {
+        padding: 20px;
+    }
+    
+    .code-block {
+        padding: 15px;
+    }
+    
+    .code-block pre {
+        font-size: 0.8rem;
+    }
+}
